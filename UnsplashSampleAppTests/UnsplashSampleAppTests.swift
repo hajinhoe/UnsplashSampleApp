@@ -5,6 +5,10 @@
 //  Created by jinho on 2022/02/18.
 //
 
+// 테스트 전략
+// UI 로직 말고 비즈니스 위주로 퀵하게.
+// 테스트 커버리지 보다는 테스트 가능함을 보여주기.
+
 import XCTest
 @testable import UnsplashSampleApp
 

@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		5FABBDDF27BF8C21007A0D99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBDDE27BF8C21007A0D99 /* AppDelegate.swift */; };
 		5FABBDE127BF8C21007A0D99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBDE027BF8C21007A0D99 /* SceneDelegate.swift */; };
-		5FABBDE327BF8C21007A0D99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBDE227BF8C21007A0D99 /* ViewController.swift */; };
-		5FABBDE627BF8C21007A0D99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FABBDE427BF8C21007A0D99 /* Main.storyboard */; };
+		5FABBDE327BF8C21007A0D99 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBDE227BF8C21007A0D99 /* MainViewController.swift */; };
 		5FABBDE827BF8C21007A0D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FABBDE727BF8C21007A0D99 /* Assets.xcassets */; };
 		5FABBDEB27BF8C21007A0D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FABBDE927BF8C21007A0D99 /* LaunchScreen.storyboard */; };
 		5FABBDF627BF8C21007A0D99 /* UnsplashSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBDF527BF8C21007A0D99 /* UnsplashSampleAppTests.swift */; };
 		5FABBE0027BF8C21007A0D99 /* UnsplashSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBDFF27BF8C21007A0D99 /* UnsplashSampleAppUITests.swift */; };
 		5FABBE0227BF8C21007A0D99 /* UnsplashSampleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE0127BF8C21007A0D99 /* UnsplashSampleAppUITestsLaunchTests.swift */; };
+		5FABBE1227BF8D5A007A0D99 /* UnsplashSettingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE1127BF8D5A007A0D99 /* UnsplashSettingStorage.swift */; };
+		5FABBE1527BF8E5C007A0D99 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE1427BF8E5C007A0D99 /* PhotoTableViewController.swift */; };
+		5FABBE1727BF8E7C007A0D99 /* PhotoTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE1627BF8E7C007A0D99 /* PhotoTableViewModel.swift */; };
+		5FABBE1A27BF8F4A007A0D99 /* PhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE1927BF8F4A007A0D99 /* PhotosResponse.swift */; };
+		5FABBE1C27BF8FD2007A0D99 /* PhotoViewerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE1B27BF8FD2007A0D99 /* PhotoViewerPageViewController.swift */; };
+		5FABBE1E27BFA37D007A0D99 /* DataRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE1D27BFA37D007A0D99 /* DataRequester.swift */; };
+		5FABBE2027BFCA1F007A0D99 /* UnsplashDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE1F27BFCA1F007A0D99 /* UnsplashDataProvider.swift */; };
+		5FABBE2327C0C046007A0D99 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE2227C0C046007A0D99 /* PhotoTableViewCell.swift */; };
+		5FABBE2627C0C9BB007A0D99 /* PhotoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE2527C0C9BB007A0D99 /* PhotoListModel.swift */; };
+		5FABBE2927C0F2EE007A0D99 /* PhotoViewerContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE2827C0F2EE007A0D99 /* PhotoViewerContentViewController.swift */; };
+		5FABBE2B27C10116007A0D99 /* PhotoViwerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE2A27C10116007A0D99 /* PhotoViwerItem.swift */; };
+		5FABBE2D27C10130007A0D99 /* PhotoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE2C27C10130007A0D99 /* PhotoListItem.swift */; };
+		5FABBE2F27C2072E007A0D99 /* PhotoViewerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE2E27C2072E007A0D99 /* PhotoViewerImageView.swift */; };
+		5FABBE3127C20753007A0D99 /* PhotoViewerContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE3027C20753007A0D99 /* PhotoViewerContentViewModel.swift */; };
+		5FABBE3327C23012007A0D99 /* PhotoViewerPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE3227C23012007A0D99 /* PhotoViewerPageViewModel.swift */; };
+		5FABBE3627C2349D007A0D99 /* ErrorMessageDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE3527C2349D007A0D99 /* ErrorMessageDisplayable.swift */; };
+		5FABBE3827C235F2007A0D99 /* PhotoTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABBE3727C235F2007A0D99 /* PhotoTableViewCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +55,7 @@
 		5FABBDDB27BF8C21007A0D99 /* UnsplashSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnsplashSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FABBDDE27BF8C21007A0D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FABBDE027BF8C21007A0D99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5FABBDE227BF8C21007A0D99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5FABBDE527BF8C21007A0D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FABBDE227BF8C21007A0D99 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5FABBDE727BF8C21007A0D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FABBDEA27BF8C21007A0D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FABBDEC27BF8C21007A0D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +64,23 @@
 		5FABBDFB27BF8C21007A0D99 /* UnsplashSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnsplashSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FABBDFF27BF8C21007A0D99 /* UnsplashSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashSampleAppUITests.swift; sourceTree = "<group>"; };
 		5FABBE0127BF8C21007A0D99 /* UnsplashSampleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashSampleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FABBE1127BF8D5A007A0D99 /* UnsplashSettingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashSettingStorage.swift; sourceTree = "<group>"; };
+		5FABBE1427BF8E5C007A0D99 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		5FABBE1627BF8E7C007A0D99 /* PhotoTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewModel.swift; sourceTree = "<group>"; };
+		5FABBE1927BF8F4A007A0D99 /* PhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosResponse.swift; sourceTree = "<group>"; };
+		5FABBE1B27BF8FD2007A0D99 /* PhotoViewerPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerPageViewController.swift; sourceTree = "<group>"; };
+		5FABBE1D27BFA37D007A0D99 /* DataRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequester.swift; sourceTree = "<group>"; };
+		5FABBE1F27BFCA1F007A0D99 /* UnsplashDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashDataProvider.swift; sourceTree = "<group>"; };
+		5FABBE2227C0C046007A0D99 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		5FABBE2527C0C9BB007A0D99 /* PhotoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListModel.swift; sourceTree = "<group>"; };
+		5FABBE2827C0F2EE007A0D99 /* PhotoViewerContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerContentViewController.swift; sourceTree = "<group>"; };
+		5FABBE2A27C10116007A0D99 /* PhotoViwerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViwerItem.swift; sourceTree = "<group>"; };
+		5FABBE2C27C10130007A0D99 /* PhotoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListItem.swift; sourceTree = "<group>"; };
+		5FABBE2E27C2072E007A0D99 /* PhotoViewerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerImageView.swift; sourceTree = "<group>"; };
+		5FABBE3027C20753007A0D99 /* PhotoViewerContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerContentViewModel.swift; sourceTree = "<group>"; };
+		5FABBE3227C23012007A0D99 /* PhotoViewerPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerPageViewModel.swift; sourceTree = "<group>"; };
+		5FABBE3527C2349D007A0D99 /* ErrorMessageDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageDisplayable.swift; sourceTree = "<group>"; };
+		5FABBE3727C235F2007A0D99 /* PhotoTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +131,14 @@
 		5FABBDDD27BF8C21007A0D99 /* UnsplashSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				5FABBE2427C0C9AC007A0D99 /* Model */,
+				5FABBE1327BF8E43007A0D99 /* Network */,
+				5FABBE1027BF8D38007A0D99 /* Utility */,
+				5FABBE0F27BF8D31007A0D99 /* PhotoCollection */,
+				5FABBE0E27BF8D2A007A0D99 /* PhotoViewer */,
+				5FABBDE227BF8C21007A0D99 /* MainViewController.swift */,
 				5FABBDDE27BF8C21007A0D99 /* AppDelegate.swift */,
 				5FABBDE027BF8C21007A0D99 /* SceneDelegate.swift */,
-				5FABBDE227BF8C21007A0D99 /* ViewController.swift */,
-				5FABBDE427BF8C21007A0D99 /* Main.storyboard */,
 				5FABBDE727BF8C21007A0D99 /* Assets.xcassets */,
 				5FABBDE927BF8C21007A0D99 /* LaunchScreen.storyboard */,
 				5FABBDEC27BF8C21007A0D99 /* Info.plist */,
@@ -125,6 +161,82 @@
 				5FABBE0127BF8C21007A0D99 /* UnsplashSampleAppUITestsLaunchTests.swift */,
 			);
 			path = UnsplashSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		5FABBE0E27BF8D2A007A0D99 /* PhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				5FABBE2727C0F2E3007A0D99 /* PhotoViewerContentView */,
+				5FABBE1B27BF8FD2007A0D99 /* PhotoViewerPageViewController.swift */,
+				5FABBE3227C23012007A0D99 /* PhotoViewerPageViewModel.swift */,
+			);
+			path = PhotoViewer;
+			sourceTree = "<group>";
+		};
+		5FABBE0F27BF8D31007A0D99 /* PhotoCollection */ = {
+			isa = PBXGroup;
+			children = (
+				5FABBE2127C0C03C007A0D99 /* PhotoCollectionViewCell */,
+				5FABBE1427BF8E5C007A0D99 /* PhotoTableViewController.swift */,
+				5FABBE1627BF8E7C007A0D99 /* PhotoTableViewModel.swift */,
+			);
+			path = PhotoCollection;
+			sourceTree = "<group>";
+		};
+		5FABBE1027BF8D38007A0D99 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5FABBE1127BF8D5A007A0D99 /* UnsplashSettingStorage.swift */,
+				5FABBE3527C2349D007A0D99 /* ErrorMessageDisplayable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5FABBE1327BF8E43007A0D99 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5FABBE1827BF8F30007A0D99 /* Response */,
+				5FABBE1D27BFA37D007A0D99 /* DataRequester.swift */,
+				5FABBE1F27BFCA1F007A0D99 /* UnsplashDataProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5FABBE1827BF8F30007A0D99 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5FABBE1927BF8F4A007A0D99 /* PhotosResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		5FABBE2127C0C03C007A0D99 /* PhotoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5FABBE2227C0C046007A0D99 /* PhotoTableViewCell.swift */,
+				5FABBE3727C235F2007A0D99 /* PhotoTableViewCellModel.swift */,
+			);
+			path = PhotoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		5FABBE2427C0C9AC007A0D99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FABBE2527C0C9BB007A0D99 /* PhotoListModel.swift */,
+				5FABBE2C27C10130007A0D99 /* PhotoListItem.swift */,
+				5FABBE2A27C10116007A0D99 /* PhotoViwerItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FABBE2727C0F2E3007A0D99 /* PhotoViewerContentView */ = {
+			isa = PBXGroup;
+			children = (
+				5FABBE2827C0F2EE007A0D99 /* PhotoViewerContentViewController.swift */,
+				5FABBE3027C20753007A0D99 /* PhotoViewerContentViewModel.swift */,
+				5FABBE2E27C2072E007A0D99 /* PhotoViewerImageView.swift */,
+			);
+			path = PhotoViewerContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +345,6 @@
 			files = (
 				5FABBDEB27BF8C21007A0D99 /* LaunchScreen.storyboard in Resources */,
 				5FABBDE827BF8C21007A0D99 /* Assets.xcassets in Resources */,
-				5FABBDE627BF8C21007A0D99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +369,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FABBDE327BF8C21007A0D99 /* ViewController.swift in Sources */,
+				5FABBDE327BF8C21007A0D99 /* MainViewController.swift in Sources */,
+				5FABBE3627C2349D007A0D99 /* ErrorMessageDisplayable.swift in Sources */,
 				5FABBDDF27BF8C21007A0D99 /* AppDelegate.swift in Sources */,
+				5FABBE2627C0C9BB007A0D99 /* PhotoListModel.swift in Sources */,
+				5FABBE2B27C10116007A0D99 /* PhotoViwerItem.swift in Sources */,
+				5FABBE3127C20753007A0D99 /* PhotoViewerContentViewModel.swift in Sources */,
 				5FABBDE127BF8C21007A0D99 /* SceneDelegate.swift in Sources */,
+				5FABBE1727BF8E7C007A0D99 /* PhotoTableViewModel.swift in Sources */,
+				5FABBE1227BF8D5A007A0D99 /* UnsplashSettingStorage.swift in Sources */,
+				5FABBE3327C23012007A0D99 /* PhotoViewerPageViewModel.swift in Sources */,
+				5FABBE2927C0F2EE007A0D99 /* PhotoViewerContentViewController.swift in Sources */,
+				5FABBE2D27C10130007A0D99 /* PhotoListItem.swift in Sources */,
+				5FABBE1E27BFA37D007A0D99 /* DataRequester.swift in Sources */,
+				5FABBE2027BFCA1F007A0D99 /* UnsplashDataProvider.swift in Sources */,
+				5FABBE1A27BF8F4A007A0D99 /* PhotosResponse.swift in Sources */,
+				5FABBE1C27BF8FD2007A0D99 /* PhotoViewerPageViewController.swift in Sources */,
+				5FABBE2327C0C046007A0D99 /* PhotoTableViewCell.swift in Sources */,
+				5FABBE1527BF8E5C007A0D99 /* PhotoTableViewController.swift in Sources */,
+				5FABBE3827C235F2007A0D99 /* PhotoTableViewCellModel.swift in Sources */,
+				5FABBE2F27C2072E007A0D99 /* PhotoViewerImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5FABBDE427BF8C21007A0D99 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FABBDE527BF8C21007A0D99 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5FABBDE927BF8C21007A0D99 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,9 +564,9 @@
 				INFOPLIST_FILE = UnsplashSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,9 +592,9 @@
 				INFOPLIST_FILE = UnsplashSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
