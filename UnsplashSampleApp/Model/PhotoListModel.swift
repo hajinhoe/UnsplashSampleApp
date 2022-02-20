@@ -37,6 +37,7 @@ class PhotoListModel {
         case alreadyRequesting
         case wrongIndex
         case unknown
+        case obejctRemoved
     }
 }
 
@@ -62,7 +63,7 @@ final class PhotoSearchListModel: PhotoListModel {
         
         dataProvider.search(keyword: keyword, page: lastPage + 1) { [weak self] result in
             guard let self = self else {
-                completion?(0, ErrorType.unknown)
+                completion?(0, ErrorType.obejctRemoved)
                 return
             }
             
@@ -95,7 +96,7 @@ final class PhotoWholeListModel: PhotoListModel {
                 
         dataProvider.list(page: lastPage + 1) { [weak self] result in
             guard let self = self else {
-                completion?(0, ErrorType.unknown)
+                completion?(0, ErrorType.obejctRemoved)
                 return
             }
             

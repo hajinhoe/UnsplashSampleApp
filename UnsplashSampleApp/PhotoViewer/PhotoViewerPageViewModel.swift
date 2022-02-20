@@ -58,7 +58,7 @@ final class PhotoViewerPageViewModel: ErrorMessageDisplayableViewModel {
             photoListModel.fetchNext { [weak self] _, error in
                 if let error = error {
                     switch error {
-                    case PhotoListModel.ErrorType.alreadyRequesting, PhotoListModel.ErrorType.endOfPage:
+                    case PhotoListModel.ErrorType.alreadyRequesting, PhotoListModel.ErrorType.endOfPage, PhotoListModel.ErrorType.obejctRemoved:
                         break
                     default:
                         self?.errorMessage = error.localizedDescription

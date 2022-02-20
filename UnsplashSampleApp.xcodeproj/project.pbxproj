@@ -141,7 +141,7 @@
 				5FABBE2427C0C9AC007A0D99 /* Model */,
 				5FABBE1327BF8E43007A0D99 /* Network */,
 				5FABBE1027BF8D38007A0D99 /* Utility */,
-				5FABBE0F27BF8D31007A0D99 /* PhotoCollection */,
+				5FABBE0F27BF8D31007A0D99 /* PhotoTable */,
 				5FABBE0E27BF8D2A007A0D99 /* PhotoViewer */,
 				5FABBDE227BF8C21007A0D99 /* MainViewController.swift */,
 				5FABBDDE27BF8C21007A0D99 /* AppDelegate.swift */,
@@ -180,14 +180,14 @@
 			path = PhotoViewer;
 			sourceTree = "<group>";
 		};
-		5FABBE0F27BF8D31007A0D99 /* PhotoCollection */ = {
+		5FABBE0F27BF8D31007A0D99 /* PhotoTable */ = {
 			isa = PBXGroup;
 			children = (
-				5FABBE2127C0C03C007A0D99 /* PhotoCollectionViewCell */,
+				5FABBE2127C0C03C007A0D99 /* PhotoTableViewCell */,
 				5FABBE1427BF8E5C007A0D99 /* PhotoTableViewController.swift */,
 				5FABBE1627BF8E7C007A0D99 /* PhotoTableViewModel.swift */,
 			);
-			path = PhotoCollection;
+			path = PhotoTable;
 			sourceTree = "<group>";
 		};
 		5FABBE1027BF8D38007A0D99 /* Utility */ = {
@@ -217,13 +217,13 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
-		5FABBE2127C0C03C007A0D99 /* PhotoCollectionViewCell */ = {
+		5FABBE2127C0C03C007A0D99 /* PhotoTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				5FABBE2227C0C046007A0D99 /* PhotoTableViewCell.swift */,
 				5FABBE3727C235F2007A0D99 /* PhotoTableViewCellModel.swift */,
 			);
-			path = PhotoCollectionViewCell;
+			path = PhotoTableViewCell;
 			sourceTree = "<group>";
 		};
 		5FABBE2427C0C9AC007A0D99 /* Model */ = {

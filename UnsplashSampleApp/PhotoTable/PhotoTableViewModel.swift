@@ -23,7 +23,6 @@ final class PhotoTableViewModel: ErrorMessageDisplayableViewModel {
     
     init(photoListModel: PhotoListModel) {
         self.photoListModel = photoListModel
-        updatePhotoListModel()
     }
     
     func itemCount(at section: Int) -> Int {
@@ -62,7 +61,7 @@ final class PhotoTableViewModel: ErrorMessageDisplayableViewModel {
         photoListModel.fetchNext { [weak self] addedItemCount, error in
             if let error = error {
                 switch error {
-                case PhotoListModel.ErrorType.alreadyRequesting, PhotoListModel.ErrorType.endOfPage:
+                case PhotoListModel.ErrorType.alreadyRequesting, PhotoListModel.ErrorType.endOfPage, PhotoListModel.ErrorType.obejctRemoved:
                     break
                 default:
                     self?.errorMessage = error.localizedDescription

@@ -39,7 +39,6 @@ final class PhotoTableViewController: UIViewController, ErrorMessageDisplayableV
                 }
             }
         }
-        
         viewModel.updatePhotoListModel()
     }
 
