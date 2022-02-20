@@ -26,17 +26,9 @@ final class PhotoTableViewController: UIViewController, ErrorMessageDisplayableV
         
         super.init(nibName: nil, bundle: nil)
         
-        viewModel.didPhotoListItemUpdate = { startIndexPath, addedItemCount in
+        viewModel.didPhotoListItemUpdate = { _, _ in
             DispatchQueue.main.async { [weak self] in
-                guard let self = self else { return }
-                let indexPathes = (0..<addedItemCount).map { IndexPath(row: startIndexPath.row + $0, section: startIndexPath.section) }
-                
-                self.tableView.performBatchUpdates {
-                    self.activityIndicatorView.startAnimating()
-                    self.tableView.insertRows(at: indexPathes, with: .none)
-                } completion: { _ in
-                    self.activityIndicatorView.stopAnimating()
-                }
+                self?.updateTableViewRows()
             }
         }
         viewModel.updatePhotoListModel()
@@ -124,8 +116,21 @@ private extension PhotoTableViewController {
             ]
         )
     }
+    
+    func updateTableViewRows() {
+        let numberOfRows = tableView.numberOfRows(inSection: 0)
+        let startIndexPath = IndexPath(row: numberOfRows, section: 0)
+        
+        let indexPathes = (0..<viewModel.itemCount(at: 0) - numberOfRows).map { IndexPath(row: startIndexPath.row + $0, section: startIndexPath.section) }
+        
+        tableView.performBatchUpdates {
+            activityIndicatorView.startAnimating()
+            tableView.insertRows(at: indexPathes, with: .none)
+        } completion: { [weak self] _ in
+            self?.activityIndicatorView.stopAnimating()
+        }
+    }
 }
-
 
 // MARK: - UICollectionViewDataSource
 extension PhotoTableViewController: UITableViewDataSource {

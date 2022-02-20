@@ -53,7 +53,19 @@ final class PhotoViewerPageViewModel: ErrorMessageDisplayableViewModel {
         // Currently support only section 0
         guard indexPath.section == 0 else { return nil }
         
+        let viewModel = photoListModel.response(at: indexPath.row)
+            .map { PhotoViwerItem(response: $0) }
+            .map { PhotoViewerContentViewModel(photoViwerItem: $0, indexPath: indexPath) }
+        
         // Request response if there is no enough items.
+        fetchModelIfNeeded(at: indexPath)
+        
+        return viewModel
+    }
+}
+
+private extension PhotoViewerPageViewModel {
+    func fetchModelIfNeeded(at indexPath: IndexPath) {
         if photoListModel.responses.count < indexPath.row + Const.fetchBase {
             photoListModel.fetchNext { [weak self] _, error in
                 if let error = error {
@@ -66,13 +78,9 @@ final class PhotoViewerPageViewModel: ErrorMessageDisplayableViewModel {
                 }
             }
         }
-        
-        return photoListModel.response(at: indexPath.row)
-            .map { PhotoViwerItem(response: $0) }
-            .map { PhotoViewerContentViewModel(photoViwerItem: $0, indexPath: indexPath) }
     }
     
-    private enum Const {
+    enum Const {
         static let fetchBase = 5
         static let errorAlertTitle = "Error!"
         static let titlePlaceholder = "No description"

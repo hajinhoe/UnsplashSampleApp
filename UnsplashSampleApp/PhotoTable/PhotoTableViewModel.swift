@@ -39,17 +39,17 @@ final class PhotoTableViewModel: ErrorMessageDisplayableViewModel {
             return cached
         }
         
-        // Request response if there is no enough items.
-        if photoListModel.responses.count < indexPath.row + Const.fetchBase {
-            updatePhotoListModel()
-        }
-        
         let viewModel = photoListModel.response(at: indexPath.row)
             .map { PhotoListItem(response: $0) }
             .map { PhotoTableViewCellModel(photoListItem: $0) }
         
         if let viewModel = viewModel {
             photoCollectionViewCellModelCache.setObject(viewModel, forKey: indexPath as NSIndexPath)
+        }
+        
+        // Request response if there is no enough items.
+        if photoListModel.responses.count < indexPath.row + Const.fetchBase {
+            updatePhotoListModel()
         }
         
         return viewModel
