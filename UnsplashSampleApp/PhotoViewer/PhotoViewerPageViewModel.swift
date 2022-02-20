@@ -73,7 +73,7 @@ final class PhotoViewerPageViewModel: ErrorMessageDisplayableViewModel {
     }
     
     private enum Const {
-        static let fetchBase = 2
+        static let fetchBase = 5
         static let errorAlertTitle = "Error!"
         static let titlePlaceholder = "No description"
     }
