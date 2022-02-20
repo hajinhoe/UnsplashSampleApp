@@ -1,4 +1,4 @@
-# Unsplash Viwer
+# Unsplash Viewer
 ## 개요
 Unsplash에서 이미지 리스트와 이미지를 가져와 표시해주는 간단한 뷰어입니다.
 ## 메인 화면
