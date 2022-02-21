@@ -7,6 +7,12 @@
 
 import XCTest
 
+// iOS 13에서 UITests에서 app 터미네이트하면 아래와 같은 에러가 발생한다.
+// UnsplashSampleAppUITests.testLaunchPerformance(): Failed to terminate jinho.UnsplashSampleApp:74034: Failed to terminate jinho.UnsplashSampleApp:0
+// Failed to terminate jinho.UnsplashSampleApp:74034: Failed to terminate jinho.UnsplashSampleApp:0
+// 종료 시의 문제이기 때문에 앱의 문제는 아닌 것으로 보임. (테스트 환경, M1 MacMini, iOS 13.7, iPhone 11 시뮬레이터, Xcode 13.2.1)
+// 타겟을 일단 UITests에 대해서는 iOS 14로 변경함.
+
 class UnsplashSampleAppUITests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -32,7 +38,7 @@ class UnsplashSampleAppUITests: XCTestCase {
     }
 
     func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+        if #available(macOS 10.15, iOS 14.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()
